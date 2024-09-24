@@ -21,17 +21,17 @@
     />
   </head>
   <body>
-    <header id="header" class="">
+    <header id="header">
       <!-- navbat section -->
       <nav
         id="nav"
-        class="flex flex-col lg:flex-row gap-3 items-center justify-evenly bg-[#f9f7f3] py-5 lg:gap-28"
+        class="flex flex-col lg:flex-row gap-1 items-center justify-evenly bg-[#f9f7f3] lg:py-5 lg:gap-28"
       >
         <div class="justify-center items-center flex">
           <!-- blog btn -->
           <button
             id="blog-btn"
-            class="w-20 font-bold text-black rounded-lg h-12 px-6 bg-[#b4f461]"
+            class="w-20 font-bold text-black mt-2 lg:mt-0 rounded-lg h-12 px-6 bg-[#b4f461]"
           >
             Blog
           </button>
@@ -45,10 +45,10 @@
         </div>
         <div class="flex gap-2 justify-center items-center">
           <img src="./image/logo.png" alt="" />
-          <h1 class="font-bold text-black text-3xl">Donate Bangladesh</h1>
+          <h1 class="font-bold text-black lg:text-3xl">Donate Bangladesh</h1>
         </div>
         <!-- main balance -->
-        <div class="flex gap-1 justify-center items-center">
+        <div class="flex gap-1 justify-center items-center mb-1 lg:mb-0">
           <img src="./image/coin.png" alt="" />
           <p class="font-bold text-black">
             <span id="main-balance">10000</span> BDT
@@ -93,10 +93,10 @@
                   BDT
                 </p>
               </div>
-              <h1 class="font-bold">
+              <h1 class="font-bold lg:text-xl text-lg">
                 Donate for Flood at Noakhali, Bangladesh
               </h1>
-              <p class="m-0">
+              <p class="lg:text-lg text-sm">
                 The recent floods in Noakhali have caused significant damage to
                 homes infrastructure. Your donation will help provide essential
                 supplies and to those affected by this disaster. Every
@@ -107,7 +107,7 @@
               <input
                 id="noakhali-input"
                 type="number"
-                class="w-full donate-input border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                class="w-full donate-input border border-gray-300 px-3 pb-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 placeholder="Write Your Donation Amount"
               />
               <button
@@ -135,10 +135,10 @@
                   <span id="feni-amount" class="font-semibold">30000</span> BDT
                 </p>
               </div>
-              <h1 class="font-bold">
+              <h1 class="font-bold lg:text-xl text-lg">
                 Donate for Flood Relief in Feni,Bangladesh
               </h1>
-              <p class="m-0">
+              <p class="lg:text-lg text-sm">
                 The recent floods in Feni have devastated local communities,
                 leading to severe disruption and loss. Your generous donation
                 will help provide immediate aid, including food, clean water,
@@ -180,8 +180,10 @@
                   <span id="qota-amount" class="font-semibold">35000</span> BDT
                 </p>
               </div>
-              <h1 class="font-bold">Aid for Injured in the Quota Movement</h1>
-              <p class="m-0">
+              <h1 class="font-bold lg:text-xl text-lg">
+                Aid for Injured in the Quota Movement
+              </h1>
+              <p class="lg:text-lg text-sm">
                 The recent Quota movement has resulted in numerous injuries and
                 significant hardship for many individuals. Your support is
                 crucial in providing medical assistance, rehabilitation, and
@@ -195,7 +197,7 @@
               <input
                 id="qota-input"
                 type="number"
-                class="w-full donate-input border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                class="w-full donate-input border border-gray-300 px-3 pb-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 placeholder="Write Your Donation Amount"
               />
               <button id="qota-donate-btn" class="btn danation bg-[#b4f461]">

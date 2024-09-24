@@ -1,5 +1,3 @@
-// // noakhali Donate
-
 document
   .getElementById("noakhali-donate-btn")
   .addEventListener("click", function () {
@@ -140,21 +138,37 @@ window.addEventListener("scroll", function () {
   const sticky = header.offsetTop;
   const twoBtn = document.getElementById("two-btn");
 
-  if (window.pageYOffset > sticky) {
-    header.classList.add(
-      "bg-white",
-      "bg-opacity-30",
-      "shadow-md",
-      "fixed",
-      "top-0",
-      "left-0",
-      "w-full",
-      "z-10",
-      "backdrop-blur-md",
-      "pb-3"
-    );
-    twoBtn.classList.add("lg:pt-2");
-    nav.classList.remove("bg-[#f9f7f3]");
+  if (window.innerWidth > 750) {
+    if (window.pageYOffset > sticky) {
+      header.classList.add(
+        "bg-white",
+        "bg-opacity-30",
+        "shadow-md",
+        "fixed",
+        "top-0",
+        "left-0",
+        "w-full",
+        "z-10",
+        "backdrop-blur-md",
+        "pb-3"
+      );
+      twoBtn.classList.add("lg:pt-2");
+      nav.classList.remove("bg-[#f9f7f3]");
+    } else {
+      header.classList.remove(
+        "bg-white",
+        "bg-opacity-30",
+        "shadow-md",
+        "fixed",
+        "top-0",
+        "left-0",
+        "w-full",
+        "z-10",
+        "backdrop-blur-md"
+      );
+      nav.classList.add("bg-[#f9f7f3]");
+      twoBtn.classList.remove("lg:pt-2");
+    }
   } else {
     header.classList.remove(
       "bg-white",
@@ -165,7 +179,8 @@ window.addEventListener("scroll", function () {
       "left-0",
       "w-full",
       "z-10",
-      "backdrop-blur-md"
+      "backdrop-blur-md",
+      "pb-3"
     );
     nav.classList.add("bg-[#f9f7f3]");
     twoBtn.classList.remove("lg:pt-2");

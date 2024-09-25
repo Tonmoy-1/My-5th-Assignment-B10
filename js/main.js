@@ -108,7 +108,7 @@ document
     document.getElementById("main-balance").innerText = newBalance.toFixed(2);
     my_modal_1.showModal();
     // doante history
-    const inputValuex = parseFloat(document.getElementById("feni-input").value);
+    const inputValuex = parseFloat(document.getElementById("qota-input").value);
     const historySection = document.getElementById("history-section");
     const historyCard = document.createElement("div");
     historyCard.className =

@@ -16,8 +16,12 @@ document
     }
     let newAmount = noakhaliAmount + inputAmount;
     let newBalance = mainBalance - inputAmount;
-    document.getElementById("noakhali-amount").innerText = newAmount.toFixed(2);
-    document.getElementById("main-balance").innerText = newBalance.toFixed(2);
+    document.getElementById("noakhali-amount").innerText = Number(
+      newAmount.toFixed(2)
+    );
+    document.getElementById("main-balance").innerText = Number(
+      newBalance.toFixed(2)
+    );
     my_modal_1.showModal();
 
     // doante history
@@ -29,8 +33,8 @@ document
     historyCard.className =
       "bg-white p-4 rounded-lg mt-3 mx-auto shadow-lg w-10/12 border border-solid border-gray-500";
     historyCard.innerHTML = `
-    <p class = 'text-xl font-bold text-black mb-1'> ${inputValuex.toFixed(
-      2
+    <p class = 'text-xl font-bold text-black mb-1'> ${Number(
+      inputValuex.toFixed(2)
     )} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
     <p> ${new Date().toDateString()} ${new Date().toLocaleTimeString()} GMT +0${-(
       new Date().getTimezoneOffset() / 60
@@ -61,8 +65,12 @@ document
     }
     let newAmount = feniAmount + feniInputAmount;
     let newBalance = mainBalance - feniInputAmount;
-    document.getElementById("feni-amount").innerText = newAmount.toFixed(2);
-    document.getElementById("main-balance").innerText = newBalance.toFixed(2);
+    document.getElementById("feni-amount").innerText = Number(
+      newAmount.toFixed(2)
+    );
+    document.getElementById("main-balance").innerText = Number(
+      newBalance.toFixed(2)
+    );
     my_modal_1.showModal();
     // doante history
     const inputValuex = parseFloat(document.getElementById("feni-input").value);
@@ -71,8 +79,8 @@ document
     historyCard.className =
       "bg-white p-4 rounded-lg mt-3 mx-auto shadow-lg w-10/12 border border-solid border-gray-500";
     historyCard.innerHTML = `
-     <p class = 'text-xl font-bold text-black mb-1'> ${inputValuex.toFixed(
-       2
+     <p class = 'text-xl font-bold text-black mb-1'> ${Number(
+       inputValuex.toFixed(2)
      )} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
      <p> ${new Date().toDateString()} ${new Date().toLocaleTimeString()} GMT +0${-(
       new Date().getTimezoneOffset() / 60
@@ -104,8 +112,12 @@ document
     }
     let newAmount = qotaAmount + qotaInputAmount;
     let newBalance = mainBalance - qotaInputAmount;
-    document.getElementById("qota-amount").innerText = newAmount.toFixed(2);
-    document.getElementById("main-balance").innerText = newBalance.toFixed(2);
+    document.getElementById("qota-amount").innerText = Number(
+      newAmount.toFixed(2)
+    );
+    document.getElementById("main-balance").innerText = Number(
+      newBalance.toFixed(2)
+    );
     my_modal_1.showModal();
     // doante history
     const inputValuex = parseFloat(document.getElementById("qota-input").value);
@@ -114,8 +126,8 @@ document
     historyCard.className =
       "bg-white p-4 rounded-lg mt-3 mx-auto shadow-lg w-10/12 border border-solid border-gray-500";
     historyCard.innerHTML = `
-      <p class = 'text-xl font-bold text-black mb-1'> ${inputValuex.toFixed(
-        2
+      <p class = 'text-xl font-bold text-black mb-1'> ${Number(
+        inputValuex.toFixed(2)
       )} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
       <p> ${new Date().toDateString()} ${new Date().toLocaleTimeString()} GMT +0${-(
       new Date().getTimezoneOffset() / 60
